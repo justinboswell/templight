@@ -34,16 +34,17 @@ namespace clang {
 
 namespace {
   
-
-const char* const SynthesisKindStrings[] = { 
+const char* const SynthesisKindStrings[] = {
   "template instantiation",
   "default template-argument instantiation",
   "default function-argument instantiation",
   "explicit template-argument substitution",
-  "deduced template-argument substitution", 
+  "deduced template-argument substitution",
   "prior template-argument substitution",
-  "default template-argument checking", 
+  "default template-argument checking",
   "exception specification instantiation",
+  "special member declaration",
+  "synthesized function definition",
   "memoization" };
 
 struct TemplateDebuggerEntry {
